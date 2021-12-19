@@ -27,7 +27,7 @@ const Login = () => {
                     <input type="text" value={email} onChange={(e) => setEmail(e.target.value)} />
                     <h5>Password</h5>
                     <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
-                    <button onClick={ signIn } className="login-signIn">
+                    <button onClick={ signIn } className=" primary">
                         Sign In
                     </button>
                 </form>

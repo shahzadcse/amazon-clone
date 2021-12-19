@@ -41,7 +41,7 @@
 }
 
 .login-container > form > input {
-  height: 30px;
+  height: 24px;
   margin-bottom: 10px;
   background-color: #fff;
   width: 98%;
@@ -56,7 +56,7 @@
   background: #f0c14b;
   border-radius: 2px;
   width: 100%;
-  height: 30px;
+  height: 24px;
   border: 1px solid;
   margin-top: 10px;
   color: #111;
@@ -67,10 +67,95 @@
 .login-register {
   border-radius: 2px;
   width: 390px;
-  height: 30px;
+  height: 24px;
   border: 1px solid;
   margin-top: 10px;
   border-color: darkgray;
   font-size: 12.5px;
   cursor: pointer;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  background-color: #fff;
+  height: 34px;
+  padding: 3px 7px;
+  line-height: normal;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+}
+
+button.primary {
+  background-color: #f0c14b;
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, #f0c14b),
+    color-stop(50%, #a88734),
+    color-stop(50%, #9c7e31),
+    color-stop(100%, #a88734)
+  );
+  background-image: -webkit-linear-gradient(
+    top,
+    #f0c14b 0%,
+    #a88734 50%,
+    #9c7e31 50%,
+    #a88734 100%
+  );
+  background-image: -moz-linear-gradient(
+    top,
+    #f0c14b 0%,
+    #a88734 50%,
+    #9c7e31 50%,
+    #a88734 100%
+  );
+  background-image: -ms-linear-gradient(
+    top,
+    #f0c14b 0%,
+    #a88734 50%,
+    #9c7e31 50%,
+    #a88734 100%
+  );
+  background-image: -o-linear-gradient(
+    top,
+    #f0c14b 0%,
+    #a88734 50%,
+    #b8943b 50%,
+    #a88734 100%
+  );
+  background-image: linear-gradient(
+    top,
+    #f0c14b 0%,
+    #a88734 50%,
+    #9c7e31 50%,
+    #a88734 100%
+  );
+
+  border-top: 1px solid rgb(240, 194, 76);
+  border-right: 1px solid #a88734;
+  border-bottom: 1px solid #9c7e31;
+  border-left: 1px solid #a88734;
+  border-radius: 4px;
+
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -webkit-box-shadow: inset 0 0 2px 0 rgba(240, 194, 76, 0.8);
+  -moz-box-shadow: inset 0 0 2px 0 rgba(240, 194, 76, 0.8);
+
+  box-shadow: inset 0 0 2px 0 rgba(240, 194, 76, 0.8);
+  color: #000;
+  font: bold 12px "helvetica neue", helvetica, arial, sans-serif;
+  padding: 7px 0;
+  /* text-shadow: 0 -1px 1px #f0c14b; */
+  width: 100%;
+}
+button.primary:hover {
+  cursor: pointer;
+  background-image: -webkit-linear-gradient(
+    top,
+    #f0cd76 0%,
+    #f0c14b 50%,
+    #f0c14b 100%
+  );
 }
