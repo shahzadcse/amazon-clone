@@ -1,15 +1,34 @@
-import React, { useState } from 'react'
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect } from 'react'
+import { Link , useNavigate } from 'react-router-dom';
 import './Register.css'
+import { useSelector, useDispatch } from 'react-redux';
+import { registerInitiate } from '../../redux/action';
 
 
 const Register = () => {
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
 
+    let dispatch = useDispatch();
+
+    const { user } = useSelector(state => state.data)
+
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        if (user) {
+            navigate('/');    
+        }
+          
+    }, [user, navigate])
+     
     const register = (e) => {
+
         e.preventDefault();
-     }
+        dispatch(registerInitiate(email, password));
+        setEmail("");
+        setPassword("");
+    };
 
     return (
         <div className="register">
